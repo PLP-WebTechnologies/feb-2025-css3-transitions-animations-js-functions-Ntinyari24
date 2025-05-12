@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #666;
+  transform: scale(1.05);
+}
+
+img {
+  width: 100px;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+}
+
+/* Animation class */
+.spin {
+  animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Theme styles */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
